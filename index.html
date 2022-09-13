@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main>
+    <section class="image"></section>
+
+    <div class="wrap"><!--wrap is use for desktop version-->
+      
+      <article>
+        <h1>Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h1>
+
+        <p>Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+
+      </article>
+
+      <section class="author" id="active">
+        <img src="./images/avatar-michelle.jpg" alt="avatar Michelle">
+        <ul>
+          <li>Michelle Appleton</li>
+          <li>28 Jun 2020</li>
+        </ul>
+
+        <section class="share">
+          <img src="./images/icon-share.svg" alt="icon share">
+        </section>
+
+        <!--Hidden share btn in author block on desktop. It has to be hidden because
+        social media block doesn't include share btn as mobile version. When social
+        media block is active then is also active this share btn -->
+        <section class="share_hidden hidden">
+          <img src="./images/icon-share.svg" class="icon_share" alt="icon-share">
+
+        </section>
+
+      </section>
+
+      <!--hidden block with social media icons-->
+
+      <section class="mobileHidden">
+        <ul>
+          <li>SHARE</li>
+          <li><a href="#"></a><img src="./images/icon-facebook.svg" class="icon" alt="icon-facebook"></li>
+          <li><a href="#"></a><img src="./images/icon-twitter.svg" class="icon" alt="icon-twitter"></li>
+          <li><a href="#"></a><img src="./images/icon-pinterest.svg" class="icon" alt="icon-pinterest"></li>
+        </ul>
+
+        <div class="triangle"></div><!-- arrow under social media block on desktop-->
+
+        <section class="share_hidden">
+          <img src="./images/icon-share.svg" class="icon_share" alt="icon-share">
+        </section>
+
+      </section>
+    </div>
+
+
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Bredis79">Luboš Bräth</a>.
+    </div>
+  </footer>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
